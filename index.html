@@ -21,7 +21,7 @@
       <!-- Navegación estilo botones -->
       <nav class="d-flex justify-content-center gap-2 flex-wrap">
         <a href="#inicio" class="btn btn-outline-light px-3">Inicio</a>
-        <a href="#" class="btn btn-outline-light px-3">Proyectos</a>
+        <a href="#proyectos" class="btn btn-outline-light px-3">Proyectos</a>
         <a href="#contacto" class="btn btn-outline-light px-3">Contacto</a>
       </nav>
     </div>
@@ -76,6 +76,62 @@
                   allowfullscreen
                 ></iframe>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="col-12">
+          <div class="card shadow-lg border-0">
+            <div class="card-body p-4">
+              <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+                <div>
+                  <h2 class="h4 mb-1">Proyectos</h2>
+                  <p class="mb-0 text-secondary">API de microblog con autenticación JWT, usuarios, follows y posts (Express + Swagger).</p>
+                </div>
+                <div class="d-flex gap-2">
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/SoyOchaita/practica1-express-api"
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="Ir al repositorio en GitHub"
+                  >
+                    Ir al repositorio
+                  </a>
+                  <a
+                    class="btn btn-outline-light"
+                    href="http://localhost:3000/docs/#/"
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="Abrir documentación Swagger en localhost"
+                  >
+                    Probar API (Swagger)
+                  </a>
+                </div>
+              </div>
+
+              <!-- (Opcional) Tarjetas rápidas del proyecto -->
+              <div class="row g-3 mt-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100 border-0">
+                    <div class="card-body">
+                      <h3 class="h6 mb-2">Tecnologías</h3>
+                      <ul class="mb-0 small text-secondary">
+                        <li>Node.js + Express</li>
+                        <li>PostgreSQL</li>
+                        <li>JWT Auth</li>
+                        <li>Swagger UI</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                  <div class="alert alert-warning mb-0" role="alert">
+                    <strong>Nota:</strong> El enlace de Swagger funciona cuando la API está corriendo en tu máquina en
+                    <code>http://localhost:3000</code>. Si publicas esta página en GitHub Pages, el botón seguirá abriendo una pestaña a tu entorno local.
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
