@@ -4,25 +4,54 @@ body {
   line-height: 1.7;
 }
 
-/* HERO con degradado y espaciado agradable */
+/* HERO */
 .hero {
   background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
   padding: 64px 0;
 }
 
-/* Ajustes visuales de cards en dark */
+/* Card styling */
 .card {
   background-color: var(--bs-body-bg);
   box-shadow: 0 4px 20px rgba(0,0,0,.35);
   border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Suaviza bordes del video embebido */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Buttons */
+.btn {
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Video container */
 .ratio {
   border-radius: 10px;
 }
 
-/* Mejoras responsivas mínimas (Bootstrap ya hace casi todo) */
+/* Responsive adjustments */
 @media (max-width: 991.98px) {
-  .hero { padding: 56px 0; }
+  .hero {
+    padding: 56px 0;
+  }
+  .card-body {
+    text-align: center;
+  }
+}
+
+/* Featured project image hover */
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
 }

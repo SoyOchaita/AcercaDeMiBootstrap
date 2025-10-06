@@ -64,17 +64,42 @@
           </div>
         </section>
 
+        <!-- PROYECTO DESTACADO -->
+        <section class="col-12">
+          <div class="card shadow-lg border-0 mt-4">
+            <div class="card-body p-4 d-flex flex-column flex-lg-row align-items-center">
+              <div class="mb-3 mb-lg-0 me-lg-4 text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2230/2230635.png"
+                     alt="Icono Paquete" width="120" height="120"
+                     class="rounded-circle border border-primary shadow-sm">
+              </div>
+              <div class="flex-grow-1">
+                <h3 class="h4 text-primary mb-2">📦 Proyecto Destacado: Package Tracking App</h3>
+                <p class="text-light mb-3">
+                  Aplicación web desarrollada en Angular con un tema oscuro y diseño adaptable.
+                  Permite registrar, actualizar y rastrear paquetes siguiendo un flujo de estados:
+                  <em>Creado → En preparación → En tránsito → Entregado / No entregado</em>.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="https://github.com/SoyOchaita/package-tracking-app" target="_blank" class="btn btn-outline-primary">🔗 Ver Repositorio</a>
+                  <a href="https://soyochaita.github.io/package-tracking-app/" target="_blank" class="btn btn-outline-success">🌐 Abrir Aplicación</a>
+                </div>
+                <p class="text-muted small mt-2">
+                  El botón <strong>“Ver Repositorio”</strong> abre el código fuente en GitHub, y
+                  <strong>“Abrir Aplicación”</strong> te lleva a la versión publicada en GitHub Pages.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Presentación (video) -->
         <section class="col-12">
           <div class="card shadow-lg border-0">
             <div class="card-body p-4">
               <h2 class="h4 mb-3">Presentación</h2>
               <div class="ratio ratio-16x9 rounded overflow-hidden">
-                <iframe
-                  src="https://www.youtube.com/embed/pXRviuL6vMY"
-                  title="Video de presentación"
-                  allowfullscreen
-                ></iframe>
+                <iframe src="https://www.youtube.com/embed/pXRviuL6vMY" title="Video de presentación" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -90,26 +115,32 @@
                   <p class="mb-0 text-secondary">API de microblog con autenticación JWT, usuarios, follows y posts (Express + Swagger).</p>
                 </div>
                 <div class="d-flex gap-2">
-                  <a
-                    class="btn btn-primary"
-                    href="https://github.com/SoyOchaita/practica1-express-api"
-                    target="_blank" rel="noopener noreferrer"
-                    aria-label="Ir al repositorio en GitHub"
-                  >
-                    Ir al repositorio
-                  </a>
-                  <a
-                    class="btn btn-outline-light"
-                    href="http://localhost:3000/docs/#/"
-                    target="_blank" rel="noopener noreferrer"
-                    aria-label="Abrir documentación Swagger en localhost"
-                  >
-                    Probar API (Swagger)
-                  </a>
+                  <a class="btn btn-primary" href="https://github.com/SoyOchaita/practica1-express-api" target="_blank" rel="noopener noreferrer">Ir al repositorio</a>
+                  <a class="btn btn-outline-light" href="http://localhost:3000/docs/#/" target="_blank" rel="noopener noreferrer">Probar API (Swagger)</a>
                 </div>
               </div>
 
-              <!-- (Opcional) Tarjetas rápidas del proyecto -->
+              <div class="card bg-dark text-light mt-4 shadow">
+                <div class="card-body">
+                  <h4 class="card-title text-primary">📦 Package Tracking App</h4>
+                  <p class="card-text">
+                    Aplicación web desarrollada en Angular con diseño responsive en tema oscuro.
+                    Permite registrar, actualizar y rastrear paquetes con flujo de estados:
+                    <em>Creado → En preparación → En tránsito → Entregado / No entregado</em>.
+                  </p>
+
+                  <div class="d-flex flex-wrap gap-2 mt-3">
+                    <a href="https://github.com/SoyOchaita/package-tracking-app" target="_blank" class="btn btn-outline-primary">🔗 Ver Repositorio</a>
+                    <a href="https://soyochaita.github.io/package-tracking-app/" target="_blank" class="btn btn-outline-success">🌐 Abrir Aplicación</a>
+                  </div>
+
+                  <p class="text-muted small mt-2">
+                    El botón <strong>“Ver Repositorio”</strong> te lleva al código fuente en GitHub, mientras que
+                    <strong>“Abrir Aplicación”</strong> te redirecciona a la versión publicada en GitHub Pages.
+                  </p>
+                </div>
+              </div>
+
               <div class="row g-3 mt-3">
                 <div class="col-12 col-md-6 col-lg-4">
                   <div class="card h-100 border-0">
@@ -139,17 +170,13 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
   <footer id="contacto" class="bg-body-tertiary text-center py-4 mt-4">
     <div class="container">
       <p class="mb-1">© <span id="year"></span> Alfonso Ochaita · Última actualización: <span id="fecha"></span></p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script para fecha -->
   <script>
     const d = new Date();
     const pad = n => String(n).padStart(2, '0');
